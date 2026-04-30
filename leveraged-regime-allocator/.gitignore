@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# uv / pip
+.venv/
+venv/
+.uv/
+uv.lock
+
+# mypy
+.mypy_cache/
+
+# ruff
+.ruff_cache/
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# environment — never commit real secrets
+.env
+.env.local
+.env.*.local
+
+# editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# data — raw/processed/cache stay local, never commit parquet or csv
+data/raw/
+data/processed/
+data/cache/
+*.parquet
+*.csv
+
+# reports are generated artifacts; commit only intentionally
+# reports/  <- intentionally NOT ignored so reports can be committed
+
+# notebooks output (strip with nbstripout pre-commit hook)
+notebooks/.ipynb_checkpoints/
